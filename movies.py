@@ -15,7 +15,7 @@ def get_movies(title):
     # create a list of titles
     result=[]
     for titles in content['Similar']['Results']:        
-        result.append(titles['Name'])                               # adds the name of the ovie to the list
+        result.append(titles['Name'])                               # adds the name of the movie to the list
     
     # check for titles in the list
     if len(result) == 0:
@@ -26,7 +26,7 @@ def get_movies(title):
         for title in result:
             print('You might like: ', title)
 
-# what the user see and intercacts with
+# what the user sees and intercacts with
 print('Get movies recommendations based on a movie you like!')
 print('--------------------------------------' + '\n')
 user_input = input("Type a movie that you like: ")
